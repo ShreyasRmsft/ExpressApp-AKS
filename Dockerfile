@@ -4,6 +4,7 @@ LABEL "maintainer"="Atul Malaviya <xyz@qwerty.com>"
 LABEL "version"="1.0.0"
 COPY . .
 EXPOSE 3000
+RUN ls -R
 RUN npm install
 RUN npm test "./__tests__/unit_tests.js"
 CMD ["npm", "run", "start"]
