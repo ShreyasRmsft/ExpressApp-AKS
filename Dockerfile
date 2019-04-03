@@ -6,5 +6,5 @@ COPY . .
 EXPOSE 3000
 RUN ls
 RUN npm install
-RUN npm run test
+RUN node ./node_modules/jest/bin/jest.js
 CMD ["npm", "run", "start"]
