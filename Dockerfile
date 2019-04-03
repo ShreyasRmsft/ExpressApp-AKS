@@ -6,5 +6,5 @@ COPY . .
 EXPOSE 3000
 RUN ls
 RUN npm install
-RUN npm test "./__tests__"
+RUN npm run test
 CMD ["npm", "run", "start"]
