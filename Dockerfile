@@ -5,5 +5,5 @@ LABEL "version"="1.0.0"
 COPY . .
 EXPOSE 3000
 RUN npm install
-RUN npm test __test__/unit_tests.js
+RUN npm test "./__tests__/unit_tests.js"
 CMD ["npm", "run", "start"]
